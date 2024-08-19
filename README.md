@@ -1,0 +1,2 @@
+# Smart_Healthcare_System
+BIT小学期智能医疗系统开发
