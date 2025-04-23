@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PatientInfo</class>
+ <widget class="QDialog" name="PatientInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>999</width>
+    <height>883</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>15</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1001</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+     <pointsize>25</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+    background-color: #22BD9F; 
+    color: white; 
+    font-family: &quot;Ubuntu&quot;; 
+    font-size: 25pt; 
+	qproperty-alignment: 'AlignCenter'; 
+}</string>
+   </property>
+   <property name="text">
+    <string>信息表</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_connect">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>1060</y>
+     <width>961</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>90</y>
+     <width>1021</width>
+     <height>971</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget
+{
+	background:white;
+}</string>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>30</y>
+      <width>611</width>
+      <height>651</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="7" column="1">
+      <widget class="QLabel" name="label_Tel">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>电话号码</string>
+       </property>
+      </widget>
+     </item>
+     <item row="14" column="0" colspan="2">
+      <widget class="QLabel" name="label_Diseases">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>慢性病史</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label_10">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>身份</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="1">
+      <widget class="QLineEdit" name="lineEdit_Tel">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: transparent; /* 设置背景为透明 */
+    border: none; /* 去除所有边框 */
+    border-bottom: 1px solid grey; /* 保留灰色下划线 */
+    color: grey; /* 设置文字颜色为黑色（或其他你喜欢的颜色） */
+ 	height: 45px; /* 设置高度为45像素 */
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="0">
+      <widget class="QLabel" name="label_year">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>从医年份</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="1">
+      <widget class="QLabel" name="Label_Allergies">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>过敏原</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_ID">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>身份证号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="12" column="1">
+      <widget class="QLabel" name="label_level">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>职称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="lineEdit_ID">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: transparent; /* 设置背景为透明 */
+    border: none; /* 去除所有边框 */
+    border-bottom: 1px solid grey; /* 保留灰色下划线 */
+    color: grey; /* 设置文字颜色为黑色（或其他你喜欢的颜色） */
+ 	height: 45px; /* 设置高度为45像素 */
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="9" column="0">
+      <widget class="QLineEdit" name="lineEdit_Age">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: transparent; /* 设置背景为透明 */
+    border: none; /* 去除所有边框 */
+    border-bottom: 1px solid grey; /* 保留灰色下划线 */
+    color: grey; /* 设置文字颜色为黑色（或其他你喜欢的颜色） */
+ 	height: 45px; /* 设置高度为45像素 */
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="13" column="0">
+      <widget class="QLineEdit" name="lineEdit_year">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: transparent; /* 设置背景为透明 */
+    border: none; /* 去除所有边框 */
+    border-bottom: 1px solid grey; /* 保留灰色下划线 */
+    color: grey; /* 设置文字颜色为黑色（或其他你喜欢的颜色） */
+ 	height: 45px; /* 设置高度为45像素 */
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="lineEdit_Address">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: transparent; /* 设置背景为透明 */
+    border: none; /* 去除所有边框 */
+    border-bottom: 1px solid grey; /* 保留灰色下划线 */
+    color: grey; /* 设置文字颜色为黑色（或其他你喜欢的颜色） */
+ 	height: 45px; /* 设置高度为45像素 */
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="10" column="0">
+      <widget class="QLabel" name="label_time">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>出诊时间</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLineEdit" name="lineEdit_Name">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: transparent; /* 设置背景为透明 */
+    border: none; /* 去除所有边框 */
+    border-bottom: 1px solid grey; /* 保留灰色下划线 */
+    color: grey; /* 设置文字颜色为黑色（或其他你喜欢的颜色） */
+ 	height: 45px; /* 设置高度为45像素 */
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="0">
+      <widget class="QLineEdit" name="lineEdit_time">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: transparent; /* 设置背景为透明 */
+    border: none; /* 去除所有边框 */
+    border-bottom: 1px solid grey; /* 保留灰色下划线 */
+    color: grey; /* 设置文字颜色为黑色（或其他你喜欢的颜色） */
+ 	height: 45px; /* 设置高度为45像素 */
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_name">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>姓名</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLabel" name="label_Addr_Dept">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>部门</string>
+       </property>
+      </widget>
+     </item>
+     <item row="11" column="1">
+      <widget class="QLineEdit" name="lineEdit_Allergies">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: transparent; /* 设置背景为透明 */
+    border: none; /* 去除所有边框 */
+    border-bottom: 1px solid grey; /* 保留灰色下划线 */
+    color: grey; /* 设置文字颜色为黑色（或其他你喜欢的颜色） */
+ 	height: 45px; /* 设置高度为45像素 */
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLabel" name="label_Sex">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>性别</string>
+       </property>
+      </widget>
+     </item>
+     <item row="15" column="0" colspan="2">
+      <widget class="QLineEdit" name="lineEdit_Diseases">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: transparent; /* 设置背景为透明 */
+    border: none; /* 去除所有边框 */
+    border-bottom: 1px solid grey; /* 保留灰色下划线 */
+    color: grey; /* 设置文字颜色为黑色（或其他你喜欢的颜色） */
+ 	height: 45px; /* 设置高度为45像素 */
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="label_9">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>密码</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QLabel" name="label_Age">
+       <property name="font">
+        <font>
+         <family>Ubuntu</family>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel {
+    color: grey; /* 设置字体颜色为灰色 */
+    font-family: &quot;Ubuntu&quot;; /* 设置字体为Ubuntu */
+    font-size: 15pt; /* 设置字体大小为15点 */
+}</string>
+       </property>
+       <property name="text">
+        <string>年龄</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QComboBox" name="comboBox_isPatient">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: none; /* 移除边框 */
+    background-color: transparent; /* 使背景透明 */
+	font-size:15pt;
+}
+QComboBox {
+    border: none; /* 移除整个 QComboBox 的边框 */
+    border-bottom: 1px solid gray; /* 添加一个灰色的下划线 */
+	height:45px;
+}
+
+QComboBox {
+    color:gray
+}
+QComboBox::drop-down {
+    border: none; /* 移除下拉按钮的边框 */
+    background: transparent; /* 使下拉按钮背景透明 */
+}
+QComboBox::down-arrow {
+    border: none;
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid gray; /* 手动绘制一个白色的箭头 */
+    width: 0;
+    height: 0;
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>医生</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>患者</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLineEdit" name="lineEdit_Password">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: transparent; /* 设置背景为透明 */
+    border: none; /* 去除所有边框 */
+    border-bottom: 1px solid grey; /* 保留灰色下划线 */
+    color: grey; /* 设置文字颜色为黑色（或其他你喜欢的颜色） */
+ 	height: 45px; /* 设置高度为45像素 */
+}</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="comboBox_Sex">
+       <property name="font">
+        <font>
+         <pointsize>15</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QComboBox {
+    border: none; /* 移除边框 */
+    background-color: transparent; /* 使背景透明 */
+	font-size:15pt;
+}
+QComboBox {
+    border: none; /* 移除整个 QComboBox 的边框 */
+    border-bottom: 1px solid gray; /* 添加一个灰色的下划线 */
+	height:45px;
+}
+
+QComboBox {
+    color:gray
+}
+QComboBox::drop-down {
+    border: none; /* 移除下拉按钮的边框 */
+    background: transparent; /* 使下拉按钮背景透明 */
+}
+QComboBox::down-arrow {
+    border: none;
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid gray; /* 手动绘制一个白色的箭头 */
+    width: 0;
+    height: 0;
+}</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>女</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>男</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="13" column="1">
+      <widget class="QLineEdit" name="lineEdit_level">
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+    background-color: transparent; /* 设置背景为透明 */
+    border: none; /* 去除所有边框 */
+    border-bottom: 1px solid grey; /* 保留灰色下划线 */
+    color: grey; /* 设置文字颜色为黑色（或其他你喜欢的颜色） */
+ 	height: 45px; /* 设置高度为45像素 */
+}</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton_fetch">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>720</y>
+      <width>350</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>61</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #22BD9F;
+	color:white;
+	border-radius:10px
+}</string>
+    </property>
+    <property name="text">
+     <string>查询个人信息</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_Send">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>720</y>
+      <width>350</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>61</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+	background-color: #22BD9F;
+	color:white;
+	border-radius:10px
+}</string>
+    </property>
+    <property name="text">
+     <string>提交更改</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>widget</zorder>
+  <zorder>label</zorder>
+  <zorder>label_connect</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

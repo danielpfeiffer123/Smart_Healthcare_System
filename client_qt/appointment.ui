@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>appointment</class>
+ <widget class="QDialog" name="appointment">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>662</width>
+    <height>632</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #22BD9E;</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>10</y>
+     <width>201</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel
+{
+	color:white;
+}</string>
+   </property>
+   <property name="text">
+    <string>预约挂号窗口</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_connect">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>580</y>
+     <width>641</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_app">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>510</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Ubuntu</family>
+     <pointsize>13</pointsize>
+     <weight>7</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+	background-color : white;/*按钮背景颜色rgb(255, 255, 100)*/
+	color :#209F85;
+	border-radius :  10px;
+	font: 57 13pt &quot;Ubuntu&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>挂号</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>90</y>
+     <width>508</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_name">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="MinimumExpanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>504</width>
+          <height>42</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+	color:white;
+}</string>
+        </property>
+        <property name="text">
+         <string>您的姓名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_name">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border: none;
+	border-bottom: 1px solid  white;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_fetch_2">
+        <property name="font">
+         <font>
+          <family>Ubuntu</family>
+          <pointsize>13</pointsize>
+          <weight>7</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton
+{
+	background-color : white;/*按钮背景颜色rgb(255, 255, 100)*/
+	color :#209F85;
+	border-radius :  10px;
+	font: 57 13pt &quot;Ubuntu&quot;;
+}</string>
+        </property>
+        <property name="text">
+         <string>查看最近的挂号信息（直接显示在下方）</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel
+{
+	color:white;
+}</string>
+          </property>
+          <property name="text">
+           <string>科室</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_dept">
+          <property name="font">
+           <font>
+            <pointsize>15</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QComboBox {
+    border: none; /* 移除边框 */
+    background-color: transparent; /* 使背景透明 */
+}
+QComboBox {
+    border: none; /* 移除整个 QComboBox 的边框 */
+    border-bottom: 1px solid white; /* 添加一个灰色的下划线 */
+}
+
+QComboBox {
+    color:white
+}
+QComboBox::drop-down {
+    border: none; /* 移除下拉按钮的边框 */
+    background: transparent; /* 使下拉按钮背景透明 */
+}
+QComboBox::down-arrow {
+    border: none;
+    image: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white; /* 手动绘制一个白色的箭头 */
+    width: 0;
+    height: 0;
+}</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>呼吸科</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>骨科</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_fetch">
+      <property name="font">
+       <font>
+        <family>Ubuntu</family>
+        <pointsize>13</pointsize>
+        <weight>7</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	background-color : white;/*按钮背景颜色rgb(255, 255, 100)*/
+	color :#209F85;
+	border-radius :  10px;
+	font: 57 13pt &quot;Ubuntu&quot;;
+}</string>
+      </property>
+      <property name="text">
+       <string>更新医生信息</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+	color:white;
+}</string>
+        </property>
+        <property name="text">
+         <string>医生信息</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_docinfo">
+        <property name="font">
+         <font>
+          <pointsize>15</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QComboBox {
+    border: none; /* 移除整个 QComboBox 的边框 */
+    border-bottom: 1px solid white; /* 添加一个白色的下划线 */
+    background-color: transparent; /* 设置背景为透明 */
+    color: white; /* 设置文本颜色为白色 */
+}
+
+QComboBox::drop-down {
+    border: none; /* 移除下拉按钮的边框 */
+    background: transparent; /* 设置按钮背景为透明 */
+    subcontrol-origin: padding; /* 确保按钮与文本不重叠 */
+    subcontrol-position: right; /* 将按钮放置在右侧 */
+    width: 20px; /* 调整按钮宽度以适应箭头 */
+}
+
+QComboBox::down-arrow {
+    border: none; /* 移除任何边框 */
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent; /* 左边的透明边框 */
+    border-right: 5px solid transparent; /* 右边的透明边框 */
+    border-top: 7px solid white; /* 上边的白色边框形成箭头 */
+}
+</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>syx_bones 1-1,2-1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>lyh_bones 3-1,6-2</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <pointsize>13</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLabel
+{
+	color:white;
+}</string>
+        </property>
+        <property name="text">
+         <string>就诊时间</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_time">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border: none;
+	border-bottom: 1px solid  white;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
