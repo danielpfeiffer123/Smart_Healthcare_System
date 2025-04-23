@@ -1,0 +1,5 @@
+# Smart_Healthcare_System
+BIT小学期智能医疗系统开发
+VSCODE里面可以直接把代码上传到github
+改文件的时候注释稍微写一下
+BIT SUCKS XD
